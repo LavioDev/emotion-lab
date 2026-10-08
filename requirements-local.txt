@@ -1,0 +1,4 @@
+# Lightweight local setup for the tokenizer notebook; model training runs in Colab.
+jupyterlab
+ipykernel
+transformers

@@ -1,0 +1,31 @@
+seed: 42
+
+model:
+  id: distilbert/distilbert-base-uncased
+  max_length: 128
+
+dataset:
+  id: dair-ai/emotion
+  config: split
+
+labels:
+  - sadness
+  - joy
+  - love
+  - anger
+  - fear
+  - surprise
+
+training:
+  learning_rate: 0.00002
+  per_device_train_batch_size: 16
+  per_device_eval_batch_size: 16
+  num_train_epochs: 3
+  weight_decay: 0.01
+  metric_for_best_model: eval_macro_f1
+  greater_is_better: true
+  evaluation_strategy: epoch
+  save_strategy: epoch
+
+output:
+  directory: checkpoints/distilbert-emotion

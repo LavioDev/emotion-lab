@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Hugging Face and experiment artifacts
+.cache/
+cache/
+checkpoints/
+models/
+outputs/
+*.log
+
+# Local environment and editor files
+.env
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

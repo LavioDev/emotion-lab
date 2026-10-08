@@ -1,0 +1,6 @@
+# Minimal dependencies for local CPU inference and the FastAPI web app.
+torch
+transformers
+safetensors
+fastapi
+uvicorn[standard]
